@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+<body>
+    <nav class="header">
+        <div class="navbar">
+            <div class="navLogo">
+                <h1>Basic Javascript Projects</h1>
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            <div class="navSection">
+                <div class="navHome">
+                    <a href="../" aria-current="page">Home</a>
+                </div>
+                <div class="navLinkedin">
+                    <a target="_blank" href="https://linkedin.com/in/maurya-shubham">LinkedIn</a>
+                </div>
+                <div class="navX">
+                    <a target="_blank" href="https://twitter.com/shubhh_m">Twitter</a>
+                </div>
+                <div class="navGithub">
+                    <a target="_blank" href="https://github.com/shubhmaurya">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <div class="calculator">
+    <h2>BMI Calculator</h2>
+    <hr>
+    <form>
+        <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" step="any" id="height" placeholder="Enter height in cm">
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" step="any" id="weight" placeholder="Enter weight in kg">
+            </div>
+                <button id="calculateBtn">Calculate BMI</button>
+            <div class="result">
+                <p>Your BMI:</p>
+                <span id="bmiResult">---</span><br>
+            </div>
+        </div>
+    </form>
+  <script src="bmiCalculator.js"></script>
+</body>
+</html>

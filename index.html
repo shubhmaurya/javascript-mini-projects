@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="navbar">
+            <div class="navLogo">
+                <h1>Basic Javascript Projects</h1>
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            <div class="navSection">
+                <div class="navHome">
+                    <a href="/" aria-current="page">Home</a>
+                </div>
+                <div class="navLinkedin">
+                    <a target="_blank" href="https://linkedin.com/in/maurya-shubham">LinkedIn</a>
+                </div>
+                <div class="navX">
+                    <a target="_blank" href="https://twitter.com/shubhh_m">Twitter</a>
+                </div>
+                <div class="navGithub">
+                    <a target="_blank" href="https://github.com/shubhmaurya">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>  
+    <main>
+        <div class="mainContainer">
+            <div class="demo">
+                <div class="demonstrate"></div>
+            </div>
+            <div class="container">
+                <div class="project" id="project1">
+                    <a href="./01-DynamicColorChanger/index.html">
+                        <img src="./Images/01-DynamicColorChanger.jpg" alt="Dynamic Color Changer" class="image-container">
+                        <div class="overlay">
+                            <h2 class="overlay-heading">Dynamic Color Changer</h2>
+                            <hr class="headingBottom">
+                            <p class="overlay-text">In this JS script listens for clicks on buttons representing different colors. When clicked, the background color of the page changes dynamically.</p>
+                            <button class="seeProjButton" onclick="window.location.href='./01-DynamicColorChanger/index.html'">See Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project" id="project2">
+                    <a href="./02-BMICalculator/index.html">
+                        <img src="./Images/02-BMICalculator.jpg" alt="BMI Calculator" class="image-container">
+                        <div class="overlay">
+                            <h2 class="overlay-heading">BMI Calculator</h2>
+                            <hr class="headingBottom">
+                            <p class="overlay-text">Here JS script handles form submission for inputting height and weight. Upon submission, it calculates the Body Mass Index (BMI) and displays the result.</p>
+                            <button class="seeProjButton" onclick="window.location.href='./02-BMICalculator/index.html'">See Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project" id="project3">
+                    <a href="./03-DigitalClock/index.html">
+                        <img src="./Images/03-DigitalClock.jpg" alt="Digital Clock" class="image-container">
+                        <div class="overlay">
+                            <h2 class="overlay-heading">Digital Clock</h2>
+                            <hr class="headingBottom">
+                            <p class="overlay-text">Using the `setInterval` function, this script continuously updates the displayed time on the webpage to reflect the current time.</p>
+                            <button class="seeProjButton" onclick="window.location.href='/03-DigitalClock/index.html'">See Project</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project" id="project4">
+                    <a href="./04-NumberGuessingGame/index.html">
+                        <img src="./Images/04-GuessTheNumber.jpg" alt="Number Guessing Game" class="image-container">
+                        <div class="overlay">
+                            <h2 class="overlay-heading">Number Guessing Game</h2>
+                            <hr class="headingBottom">
+                            <p class="overlay-text">Here JS script lets users guess a random number between 1 and 100. It gives feedback on whether the guess is high or low, ending the game after 10 attempts or upon guessing the correct number.</p>
+                            <button class="seeProjButton" onclick="window.location.href='./04-NumberGuessingGame/index.html'">See Project</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // script for burger
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navLinks = document.querySelector('.navSection');
+
+            burgerMenu.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+            navLinks.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+            });
+        });
+        // script for typewriter
+        const text = "Basic JavaScript Projects showcase fundamental JavaScript concepts such as session storage, event handling, form validation, DOM manipulation, and conditional logic, among other essential skills. I've developed these projects not only as excellent introductory exercises for learning JavaScript but also to demonstrate practical applications for building core concepts in a fun and interactive manner. They serve as valuable demonstrations of my proficiency in core concepts."
+        const speed = 50;
+    
+        function typewriter() {
+        let typedText = sessionStorage.getItem('typedText');
+
+        if (typedText !== text) {
+            typedText = '';
+            let i = 0;
+
+            (function typingDemo() {
+                if (i < text.length) {
+                    typedText += text.charAt(i);
+                    document.querySelector('.demonstrate').innerHTML = typedText;
+                    i++;
+                    sessionStorage.setItem('typedText', typedText);
+                    setTimeout(typingDemo, speed);
+                }
+            })()
+        } else {
+            document.querySelector('.demonstrate').innerHTML = typedText;
+        }
+    }
+
+    window.addEventListener('load', typewriter);
+    </script>
+</body>
+</html>

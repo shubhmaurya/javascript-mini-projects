@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+}
+
+body {
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+  color: #fff;
+  background-color: rgb(21, 32, 43);
+}
+
+.header {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+nav .navbar{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.navHome a, .navLinkedin a, .navX a, .navGithub a {
+  text-decoration: none;
+  color: #fff; 
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navHome a{
+  color: #1D98F0;
+}
+.navHome a:hover, .navLinkedin a:hover, .navX a:hover, .navGithub a:hover {
+  color: #1D98F0;
+}
+
+.mainContainer{
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+.demo .demonstrate{
+  margin-top: 5%;
+  padding: 0 5% 0 5.5%;
+  font-size: 20px;
+}
+
+.container {
+  margin-top: 3%; 
+  padding: 0 5.5% 0 5%;
+  /* gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.project {
+  position: relative;
+  margin-top: 5px;
+  width: 300px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0),
+                              rgba(0,0,0,0.7) 20%,
+                              rgba(0,0,0,1)
+                              );
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(70%);
+  transition: transform 500ms ease-out; 
+  z-index: 1;
+}
+
+
+.project:hover .overlay {
+  transform: translateY(0%);
+  transition: transform 500ms ease-in-out;
+  /* left: 0; */
+  opacity: 1;
+  
+}
+
+.overlay-heading{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlay > hr{
+  width: 100%;
+  color: #1D98F0;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.seeProjButton{
+  width: 50%;
+  align-self: center;
+  height: 10%;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1D98F0;
+}
+
+.burger-menu {
+  display: none; /* Hide burger menu by default */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Media query */
+/* for mobile */
+@media only screen and (max-width : 480px) {
+  .project {
+    width: 300px;
+    height: 280px;
+    margin-bottom: 15px; 
+  }
+
+  .navSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+  }
+
+  .navSection.active {
+    transform: translateX(0);
+  }
+
+  .navLogo {
+    font-size: 15px;
+  }
+
+  .navSection > div {
+    margin-top: 10px;
+  }
+
+  .demo .demonstrate {
+    font-size: 18px;
+  }
+
+  /* burger css */
+  .burger-menu {
+    display: block; /* Show burger menu for smaller screens */
+  }
+
+  .navHome a,
+  .navLinkedin a,
+  .navX a,
+  .navGithub a {
+    /* color: #fff; */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+
+  .overlay{
+    transform: translateY(0%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.9));
+  }
+
+}
+
+/* for tablets */
+@media only screen and (min-width : 481px) and (max-width : 960px) {
+  .container{
+    justify-content: space-evenly;
+  }
+  .project {
+    width: 300px;
+    height: 280px;
+    margin-bottom: 15px; 
+  }
+
+  .navSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+  }
+
+  .navSection.active {
+    transform: translateX(0);
+  }
+
+  .navLogo {
+    font-size: 15px;
+  }
+
+  .navSection > div {
+    margin-top: 10px;
+  }
+
+  .demo .demonstrate {
+    font-size: 18px;
+  }
+
+  /* burger css */
+  .burger-menu {
+    display: block; /* Show burger menu for smaller screens */
+  }
+
+  .navHome a,
+  .navLinkedin a,
+  .navX a,
+  .navGithub a {
+    /* color: #fff; */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+
+  .overlay{
+    transform: translateY(0%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.9));
+  }
+
+}

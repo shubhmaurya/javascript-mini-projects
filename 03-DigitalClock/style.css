@@ -1,0 +1,40 @@
+.navSection a {
+    text-decoration: none;
+    color: #fff; /* Set default color */
+}
+
+.navSection a:hover {
+    color: #1D98F0; /* Set hover color */
+}
+
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.clock span{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.time {
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #202328;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 15px 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* Media query */
+/* for mobile */
+@media only screen and (max-device-width : 480px) {}
+
+/* for tablets */
+@media only screen and (min-device-width : 481px) and (max-device-width : 960px) {}
+  
