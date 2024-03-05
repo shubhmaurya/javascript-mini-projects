@@ -71,14 +71,14 @@
 }
 /* Media query */
 /* for mobile */
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
     .calculator{
         width: 90%;
     }
 }
 
 /* for tablets */
-@media only screen and (min-device-width : 481px) and (max-device-width : 960px) {
+@media only screen and (min-width : 481px) and (max-width : 960px) {
     .calculator{
         width: 60%;
     }
