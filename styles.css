@@ -59,10 +59,10 @@ nav .navbar{
 .container {
   margin-top: 3%; 
   padding: 0 5.5% 0 5%;
-  /* gap: 10px; */
+  gap: 7px;
   display: flex;
   flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 .project {
