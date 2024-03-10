@@ -20,6 +20,9 @@ Description: This project is a simple game where the user tries to guess a rando
 ### 5. Know Your KeyCode
 Description: This mini project displays which key got pressed on your keyboard it displays on screen whith their character code values.
 
+### 6. Unlimited Colors with Time
+Description: This mini project generates random color and set it to the background and have the time control of color changing speed. Also adjust the text color with respect to brightness.
+
 #### Creation Under
 This project is completely build using Javascript, and for designing used CSS and HTML.
 

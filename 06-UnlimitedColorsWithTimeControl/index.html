@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unlimited Colors with Time</title>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="navbar">
+          <div class="navLogo">
+              <h1>Basic Javascript Projects</h1>
+          </div>
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="navSection">
+              <div class="navHome">
+                  <a href="../" aria-current="page">Home</a>
+              </div>
+              <div class="navLinkedin">
+                  <a target="_blank" href="https://linkedin.com/in/maurya-shubham">LinkedIn</a>
+              </div>
+              <div class="navX">
+                  <a target="_blank" href="https://twitter.com/shubhh_m">Twitter</a>
+              </div>
+              <div class="navGithub">
+                  <a target="_blank" href="https://github.com/shubhmaurya">GitHub</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <main>
+        <div class="main">
+            <div class="innerMain">
+                <h2 id="heading">Unlimited Background Color Changer with Time</h2>
+                <button class="button" id="start">Start</button>
+                <button class="button" id="stop">Stop</button>
+
+                <div class="sliderContainer">
+                    <h3 id="sliderHeading">Slide the bar below to adjust the speed of background color change.</h3>
+                    <input type="range" name="TimeSpeed" class="slider" id="speedSlider" min="100" max="6000" value="1000"></br>
+                    <label for="speedSlider" id="speedValue"></label><br>
+                    <h4 class="buttonStatus"></h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="UnlimitedColorsWithTime.js"></script>
+  </body>
+</html>
