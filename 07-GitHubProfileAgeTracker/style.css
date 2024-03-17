@@ -1,0 +1,253 @@
+main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.innerMain{
+    width: 50%;
+    padding: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+/* for index.html */
+.heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.heading-hr {
+    margin-top: -10px;
+    border: 0;
+    height: 2px;
+    background-color: #1D98F0;
+    width: 60%;
+}
+
+#mainForm{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+}
+
+input{
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.submitButton {
+    width: 30%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #1D98F0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.errorMsg{
+    display: none;
+}
+#errorQuotes{
+    display: inline-block;
+    color: red;
+}
+
+#ifError{
+    display: inline;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: lighter;
+
+}
+
+/* for profile.html */
+.column{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.profileColumn{
+    width: 40%;
+}
+
+
+.gitHubProfile{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid #1D98F0;
+    padding: 3px;
+}
+
+.follFoll {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.follFoll h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.follFoll h3,
+.follFoll p {
+    margin: 0;
+    padding: 0;
+}
+
+.githubProfButton{
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1D98F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detailsColumn{
+    width: 60%;
+    text-align: left;
+    position: relative;
+}
+
+#profileName{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.custom-hr {
+    margin-top: 3px;
+    border: 0;
+    height: 2px;
+    background-color: #1D98F0;
+}
+
+.dates{
+    margin-top: 1.5rem;
+}
+
+.doj, .lastActivity {
+    display: inline-block;
+    margin: 0;
+}
+  
+.joinedDate, .updatedDate {
+    display: inline;
+}
+.goBack{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+}
+
+.backButton{
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1D98F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media query */
+/* for mobile */
+@media only screen and (max-width : 480px) {
+    main{
+        height: 80vh;
+    }
+    .innerMain{
+        width: 90%;
+        padding: 15px;
+    }
+    .heading{
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    .heading-hr {
+        width: 80%;
+    }
+    #mainForm{
+        display: block;
+        margin: 1rem auto;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .submitButton{
+        width: 100%;
+    }
+    .column{
+        display: block;
+    }
+    .profileColumn{
+        width: 100%;
+    }
+    .detailsColumn{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .githubProfButton{
+        width: 100%;
+    }
+    .goBack{
+        position: relative;
+        text-align: center;
+    }
+    .backButton{
+        width: 100%;
+    }
+}
+/* for tablets */
+@media only screen and (min-width : 481px) and (max-width : 960px) {
+    main{
+        height: 85vh;
+        margin-top: 50px;
+    }
+    .innerMain{
+        width: 80%;
+        padding: 15px;
+    }
+    .heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .heading-hr {
+        width: 60%;
+    }
+    #mainForm{
+        display: block;
+        margin: 1rem auto;
+    }
+    input{
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+    .submitButton{
+        width: 80%;
+    }
+    .profileColumn{
+        width: 40%;
+    }
+    .detailsColumn{
+        width: 60%;
+    }
+}

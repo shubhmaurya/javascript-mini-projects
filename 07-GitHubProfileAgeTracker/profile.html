@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Profile Age Tracker</title>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="navbar">
+          <div class="navLogo">
+              <h1>Basic Javascript Projects</h1>
+          </div>
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="navSection">
+              <div class="navHome">
+                  <a href="../" aria-current="page">Home</a>
+              </div>
+              <div class="navLinkedin">
+                  <a target="_blank" href="https://linkedin.com/in/maurya-shubham">LinkedIn</a>
+              </div>
+              <div class="navX">
+                  <a target="_blank" href="https://twitter.com/shubhh_m">Twitter</a>
+              </div>
+              <div class="navGithub">
+                  <a target="_blank" href="https://github.com/shubhmaurya">GitHub</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <main>
+        <div class="innerMain">
+            <div class="column">
+                <div class="profileColumn">
+                    <img id="profilePicture" src="../Images/07-GitHubProfileAgeTracker.jpg" class="gitHubProfile">
+                        <div class="follFoll">
+                            <div id="followers">
+                                <h3>Followers</h3>
+                                <p class="followersCount">0</p>
+                            </div>
+                            <div id="following">
+                                <h3>Following</h3>
+                                <p class="followingCount">0</p>
+                            </div>
+                        </div>
+                        <button type="button" class="githubProfButton">Visit Profile</button>
+                </div>
+                <div class="detailsColumn">
+                    <div class="nameNdates">
+                        <h2 id = "profileName">Abc Xyz</h2>
+                        <hr class = "custom-hr">
+                        <div class="dates">
+                            <p class="doj">Joined GitHub on: <h4 class="joinedDate"> dd-mm-yyyy</h4></p>
+                            <p class="lastActivity">On <h4 class="updatedDate"> dd-mm-yyyy</h4> did some activity on their profile.</p>
+                        </div>
+                    </div>
+                    <div class="goBack">
+                        <button type="button" class="backButton">Go Back to Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="profile.js"></script>
+  </body>
+</html>

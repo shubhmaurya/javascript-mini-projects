@@ -23,6 +23,9 @@ Description: This mini project displays which key got pressed on your keyboard i
 ### 6. Unlimited Colors with Time
 Description: This mini project generates random color and set it to the background and have the time control of color changing speed. Also adjust the text color with respect to brightness.
 
+### 7. GitHub Profile Age Tracker
+Description: Ever wondered about the creation date of a GitHub account? This JavaScript mini project has got you covered! By simply entering a GitHub username, users can instantly retrieve the date when the specified account was created.
+
 #### Creation Under
 This project is completely build using Javascript, and for designing used CSS and HTML.
 

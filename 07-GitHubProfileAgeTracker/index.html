@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Profile Age Tracker</title>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="navbar">
+          <div class="navLogo">
+              <h1>Basic Javascript Projects</h1>
+          </div>
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="navSection">
+              <div class="navHome">
+                  <a href="../" aria-current="page">Home</a>
+              </div>
+              <div class="navLinkedin">
+                  <a target="_blank" href="https://linkedin.com/in/maurya-shubham">LinkedIn</a>
+              </div>
+              <div class="navX">
+                  <a target="_blank" href="https://twitter.com/shubhh_m">Twitter</a>
+              </div>
+              <div class="navGithub">
+                  <a target="_blank" href="https://github.com/shubhmaurya">GitHub</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <main>
+        <div class="innerMain">
+            <h1 class="heading">GitHub Profile Age Tracker</h1>
+            <hr class="heading-hr">
+            <p>This is a lightweight web application designed to provide users with the creation date of a GitHub account. By simply entering a GitHub username, users can instantly retrieve the date when the specified account was created and last activity date.</p>
+            <form id="mainForm">
+                <input type="text" name="username" id="username" placeholder="Enter GitHub username">
+                <button type="submit" class="submitButton" id="submitButton">Check</button>
+            </form>
+            <div class="errorMsg">
+                <p id="errorQuotes">"<span id="ifError">not found</span>"</p>
+            </div>
+        </div>
+    </main>
+    <script src="verifyUser.js"></script>
+  </body>
+</html>
